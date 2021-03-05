@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&family=Oswald:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navigation">
+      <ul>
+        <li class="navigation__item"><a class="link nav__link" href="#home">Home</a></li>
+        <li class="navigation__item"><a class="link nav__link" href="#about">About</a></li>
+        <li class="navigation__item"><a class="link nav__link" href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+    <section id="home" class="home section section--active">
+      <h1 class="projects__item--heading heading__primary">
+        <span class="heading__primary--border">Port</span>Darja
+      </h1>
+      <div class="content home__content">
+        <h2 class="heading__secondary">Front-end web developer</h2>
+        <button class="btn btn__learn-more btn__learn-more--bg-screen">
+          Learn More<span>&#10230;</span>
+        </button>
+        <button class="btn btn__learn-more btn__learn-more--sm-screen">
+          Learn More<!--<span>&#10230;</span>-->
+        </button>
+      </div>
+        <ul class="social">
+              <li class="social__link">
+                <a
+                  href="https://github.com/darjaport?tab=repositories"
+                  target="_blank"
+                  class="link"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li class="social__link">
+                <a
+                  href="https://codepen.io/darjaport/pens/public"
+                  target="_blank"
+                  class="link"
+                  ><i class="fab fa-codepen"></i
+                ></a>
+              </li>
+            </ul>
+    </section>
+
+    <section id="about" class="about section middle">
+      <h1 class="projects__item--heading heading__primary">
+        <span class="heading__primary--left">About</span><span class="heading__primary--border">Me</span>
+      </h1>
+      <div class="content about__content">
+        <ul class="about__items">
+            <li class="about__item">Name<span>Darja Port</span></li>
+            <li class="about__item">
+              E-mail<span
+                ><a class="email" href="mailto:darja.port@gmail.com"
+                  >darja.port@gmail.com</a
+                ></span
+              >
+            </li>
+            <li class="about__item">Skills<span></span></li>
+        </ul>
+      </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+      <h1 class="projects__item--heading heading__primary">
+        <span class="heading__primary--border">My</span>Projects
+      </h1>
+      <div class="content projects__content">
+        <ul class="projects__items">
+          <li class="projects__item">
+            Todo App<span
+              ><a href="https://github.com/darjaport/Todo_App" target="_blank" class="link"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://darjaport.github.io/Todo_App/" target="_blank" class="link"
+                ><i class="fas fa-external-link-alt"></i></a
+            ></span>
+          </li>
+          <li class="projects__item">
+            Project 2<span
+              ><a href="#" target="_blank" class="link"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="#" target="_blank" class="link"
+                ><i class="fas fa-external-link-alt"></i></a
+            ></span>
+          </li>
+          <li class="projects__item">
+            Project 3<span
+              ><a href="#" target="_blank" class="link"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="#" target="_blank" class="link"
+                ><i class="fas fa-external-link-alt"></i></a
+            ></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+</html>
