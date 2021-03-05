@@ -162,6 +162,12 @@ li {
 
 .navigation .link {
   color: var(--color-white);
+  font-weight: 300;
+  transition: all 0.3s;
+}
+
+.navigation .avtive__nav-link .link {
+  font-weight: 700;
 }
 
 /* ------------------------------------------------ */
