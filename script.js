@@ -9,6 +9,7 @@ const btnMoreSm = document.querySelector(".btn__learn-more--sm-screen");
 
 const navigation = document.querySelector(".navigation");
 const navLinks = document.querySelector(".navigation ul");
+const navLi = document.querySelectorAll(".navigation__item");
 
 // Big screen pages
 document.addEventListener("mouseover", (e) => {
@@ -66,13 +67,3 @@ const hoverNavLink = function (e) {
 
 navigation.addEventListener("mouseover", hoverNavLink.bind(0.5));
 navigation.addEventListener("mouseout", hoverNavLink.bind(1));
-
-navigation.addEventListener("click", (e) => {
-  const clicked = e.target.closest(".navigation__item");
-  const siblings = document.querySelectorAll(".navigation__item");
-
-  siblings.forEach((el) => {
-    el.classList.remove("avtive__nav-link");
-  });
-  clicked.classList.add("avtive__nav-link");
-});
