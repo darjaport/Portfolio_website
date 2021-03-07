@@ -45,7 +45,7 @@ btnMoreSm.addEventListener("click", () => {
   aboutPage.scrollIntoView({ behavior: "smooth" });
 });
 
-// Small screen navigation
+// Small screen navigation // Smooth scrolling
 navLinks.addEventListener("click", (e) => {
   e.preventDefault();
   if (e.target.classList.contains("nav__link")) {

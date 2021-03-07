@@ -143,13 +143,19 @@ li {
   position: fixed;
   z-index: 1000;
   transition: all 0.3s;
-  backdrop-filter: blur(1rem);
   text-align: center;
   width: 100%;
   padding: 2.5rem 0;
   font-family: var(--font-sub-heading);
   text-transform: uppercase;
   font-weight: 400;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .navigation {
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+  }
 }
 
 .navigation li {
@@ -255,6 +261,10 @@ li {
   font-weight: 700;
 }
 
+.about__items li:nth-child(3) {
+  margin-top: 2rem;
+}
+
 /* ------------------------------------------------ */
 /* --- PROJECTS --- */
 
@@ -353,6 +363,10 @@ li {
   .projects,
   .middle {
     left: 0;
+  }
+
+  .heading__primary--border {
+    -webkit-text-stroke-width: 1.5px;
   }
 
   .heading__primary {
