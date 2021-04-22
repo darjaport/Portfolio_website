@@ -110,18 +110,18 @@ button:active {
   background-color: transparent;
 
   padding: 1.8vmin 4vmin;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
 
   cursor: pointer;
 }
 
-.btn span {
+/* .btn span {
   margin-left: 0.6rem;
 }
 
 .btn:hover {
   transform: scale(1.1);
-}
+} */
 
 a {
   text-decoration: none;
@@ -180,7 +180,64 @@ li {
 /* --- HOME --- */
 .btn__learn-more {
   margin-top: 6vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* ------------------------------------------- */
+.arrow {
+  margin-top: 0.2rem;
+  position: relative;
+  display: block;
+  width: 0rem;
+  height: 0.1rem;
+  background-color: var(--color-white);
+  transition: all 0.2s;
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  width: 0rem;
+  height: 0.1rem;
+  background-color: var(--color-white);
+  top: 0;
+  right: 0;
+  transition: width 0.1s;
+  transition: transform 0.2s 0.2s;
+}
+
+.arrow::before {
+  transform-origin: right;
+  transform: rotate(0deg);
+}
+
+.arrow::after {
+  transform-origin: right;
+  transform: rotate(0deg);
+}
+
+.btn:hover .arrow {
+  margin-left: 0.8rem;
+  width: 5vmin;
+}
+
+.btn:hover .arrow::before,
+.btn:hover .arrow::after {
+  width: 2vmin;
+}
+
+.btn:hover .arrow::before {
+  transform: rotate(30deg);
+}
+
+.btn:hover .arrow::after {
+  transform: rotate(-30deg);
+}
+
+/* ------------------------------------------- */
 
 .social {
   position: absolute;
